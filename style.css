@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    height: 80vh;
+    margin:30px auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.left{
+    border-radius: 10px;
+    background-color: antiquewhite;
+    flex-grow: 2;
+
+}
+.right{
+    border-radius: 10px;
+    background-color:aquamarine;
+    flex-grow: 5;
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        flex-direction: column;
+    }
+}
